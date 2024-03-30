@@ -66,8 +66,9 @@ body {
                         width: 100%;
                         padding-left: 10%;
                         padding-right: 10%;
+                        gap: 100px;
 
-                        a {
+                        button {
                             text-decoration: none;
                             color: #EFDA4D;
                             font-size: 40px;
@@ -106,7 +107,7 @@ body {
                                     .exercise-info {
                                         display: flex;
                                         width: 80%;
-                                        align-items: start;
+                                        gap:3px;
 
                                         .exercise-name {
                                             color: #f2f3d1;
@@ -115,10 +116,14 @@ body {
                                             width: 30%;
                                         }
 
+                                        hr{
+                                            border: solid 1px #EFDA4D;
+                                        }
                                         .short-description {
                                             color: white;
                                             font-weight: 400;
                                             width: 70%;
+                                            padding-left: 5px;
                                         }
                                     }
 
@@ -211,6 +216,11 @@ body {
                         li {
                             margin-left: 20px;
                             color: white;
+                        }
+                    }
+                    div{
+                        .error{
+                            display: none;
                         }
                     }
 
@@ -335,9 +345,9 @@ body {
                             padding-right: 10%;
                             flex-wrap: wrap;
                             justify-content: center;
-                            gap: 15px;
+                            gap: 20px;
 
-                            a {
+                            button {
                                 font-size: 20px;
                             }
                         }
@@ -356,6 +366,7 @@ body {
                                     .container-exercise {
                                         flex-direction: column;
                                         align-items: center;
+                                        padding-bottom: 10px;
 
                                         .exercise-info {
                                             width: 100%;
@@ -369,17 +380,19 @@ body {
                                             }
 
                                             .short-description {
-                                                font-size: 15px;
+                                                font-size: 14px;
                                             }
                                         }
 
                                         .btn-details {
-                                            width: 35%;
+                                            width: 40%;
+                                            font-size: 14px;
                                         }
                                     }
 
                                     .container-description {
                                         padding-bottom: 10px;
+                                        margin-bottom: 5px;
 
                                         .description {
                                             font-size: 15px;
@@ -388,6 +401,7 @@ body {
 
                                         .show {
                                             width: 40%;
+                                            font-size: 15px;
                                         }
                                     }
                                 }

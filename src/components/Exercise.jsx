@@ -15,6 +15,7 @@ export default function Exercise({ exerciseName, shortDescription, descriptionId
                 <div className="container-exercise">
                     <div className="exercise-info">
                         <h3 className="exercise-name">{exerciseName}</h3>
+                        <hr />
                         <h4 className="short-description">{shortDescription}</h4>
                     </div>
                     <button className="btn-details" onClick={toggleDetails} id={buttonId}>

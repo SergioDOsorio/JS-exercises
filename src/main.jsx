@@ -17,7 +17,11 @@ const router = createHashRouter([
   },
   {
     path: '/BRPreviewer',
-    element: <Example />
+    element: <Example exampleTitle="Border Radius previewer" example="Ex_BRPreviewer" code="C_BRPreviewer" />
+  },
+  {
+    path: '/Calculator',
+    element: <Example exampleTitle="Calculator" example="Ex_Calculator" code="C_Calculator" />
   }
 ]);
 
