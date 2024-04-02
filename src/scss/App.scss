@@ -1,12 +1,18 @@
+//Font
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+//SASS elements
+@import './sections/beginner-styles.scss';
+
+
+//Reset
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+//General styles
 
 body {
     background-color: #2B2D31;
@@ -15,15 +21,17 @@ body {
     justify-content: center;
     flex-direction: column;
 
-    div {
-        .container-app {
-            background-color: #2B2D31;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Roboto';
+    main {
 
-            main {
+        div {
+            .container-app {
+                background-color: #2B2D31;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Roboto';
+
+
                 .container-main {
                     background-color: #34363b;
                     max-width: 1024px;
@@ -107,7 +115,7 @@ body {
                                     .exercise-info {
                                         display: flex;
                                         width: 80%;
-                                        gap:3px;
+                                        gap: 3px;
 
                                         .exercise-name {
                                             color: #f2f3d1;
@@ -116,9 +124,10 @@ body {
                                             width: 30%;
                                         }
 
-                                        hr{
+                                        hr {
                                             border: solid 1px #EFDA4D;
                                         }
+
                                         .short-description {
                                             color: white;
                                             font-weight: 400;
@@ -176,130 +185,119 @@ body {
                             border-bottom: none;
                         }
                     }
+
                 }
             }
-        }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            padding-top: 40px;
-            align-items: center;
-            font-family: "Roboto";
-            padding-bottom: 20px;
-
-            h1 {
-                color: #EFDA4D;
-            }
-
-            .container-example {
+            .container {
                 display: flex;
-                margin-top: 10px;
+                flex-direction: column;
+                padding-top: 40px;
+                align-items: center;
+                font-family: "Roboto";
+                padding-bottom: 20px;
 
-                .example {
-                    color: white;
-                    background-color: #34363b;
-                    width: 512px;
-                    padding: 20px;
-                    border: solid 2px #EFDA4D;
-                    height: 550px;
-
-                    h2 {
-                        color: #EFDA4D;
-                        text-align: center;
-                    }
-
-                    ul {
-                        color: #EFDA4D;
-                        font-size: 16px;
-
-                        li {
-                            margin-left: 20px;
-                            color: white;
-                        }
-                    }
-                    div{
-                        .error{
-                            display: none;
-                        }
-                    }
-
-                    hr {
-                        margin: 20px 0 20px 0;
-                    }
-
-                    .Border-radius-previewer {
-                        display: flex;
-                        width: 100%;
-
-                        .center {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: center;
-                            width: 40%;
-                        }
-                    }
+                h1 {
+                    color: #EFDA4D;
                 }
 
-                .script {
-                    color: white;
-                    background-color: #34363b;
-                    width: 512px;
-                    padding: 20px;
-                    border: solid 2px #EFDA4D;
+                .container-example {
                     display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    height: 550px;
+                    margin-top: 10px;
 
-                    .h90 {
-                        height: 90%;
-                        background-color: #2B2D31;
-                        padding: 10px;
-                    }
 
-                    .h10 {
-                        height: 10%;
-                    }
+                    .example {
+                        color: white;
+                        background-color: #34363b;
+                        width: 512px;
+                        padding: 20px;
+                        border: solid 2px #EFDA4D;
 
-                    div {
+                        p {
+                            font-size: 16px;
+                            padding-bottom: 10px;
+                        }
 
-                        overflow: auto;
-                        scrollbar-color: #888 #f1f1f1;
-                        scrollbar-width: thin;
+
+                        h2 {
+                            color: #EFDA4D;
+                            text-align: center;
+                        }
+
+                        ul {
+                            color: #EFDA4D;
+                            font-size: 16px;
+
+                            li {
+                                margin-left: 20px;
+                                color: white;
+                            }
+                        }
 
                         hr {
-                            border: 1px solid#EFDA4D;
+                            margin: 20px 0 20px 0;
+                        }
+                    }
+
+                    .script {
+                        color: white;
+                        background-color: #34363b;
+                        width: 512px;
+                        padding: 20px;
+                        border: solid 2px #EFDA4D;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        min-height: 550px;
+
+                        .h90 {
+                            height: 90%;
+                            background-color: #2B2D31;
+                            padding: 10px;
+                        }
+
+                        hr{
+                            margin-top: 10px;
+                        }
+
+                        div {
+
+                            overflow: auto;
+                            scrollbar-color: #888 #f1f1f1;
+                            scrollbar-width: thin;
+
+                            hr {
+                                border: 1px solid#EFDA4D;
+                                margin-bottom: 5px;
+                            }
+                        }
+
+                        p {
+                            font-size: 16px;
+                        }
+
+                        h2 {
+                            color: #EFDA4D;
+                            text-align: center;
                             margin-bottom: 5px;
                         }
                     }
 
-                    p {
-                        font-size: 16px;
-                    }
 
-                    h2 {
-                        color: #EFDA4D;
-                        text-align: center;
-                        margin-bottom: 5px;
-                    }
                 }
-
-
             }
-        }
 
-        .previous {
-            text-decoration: none;
-            color: #EFDA4D;
-            font-size: 30px;
-            background-color: rgba(239, 217, 77, 0.1529411765);
-            border-radius: 100px;
-            padding: 10px;
-            border: solid 2px #2B2D31;
-            width: 21%;
-            margin-top: 20px;
+            .previous {
+                text-decoration: none;
+                color: #EFDA4D;
+                font-size: 30px;
+                background-color: rgba(239, 217, 77, 0.1529411765);
+                border-radius: 100px;
+                padding: 10px;
+                border: solid 2px #2B2D31;
+                width: 21%;
+                margin-top: 20px;
+            }
         }
     }
 }
@@ -307,9 +305,9 @@ body {
 
 @media (max-width: 426px) {
     body {
-        div {
-            .container-app {
-                main {
+        main {
+            div {
+                .container-app {
                     .container-main {
                         width: 320px;
                         max-width: 320px;
@@ -408,36 +406,38 @@ body {
                             }
                         }
                     }
-                }
-            }
 
-            .container {
-                width: 320px;
-                flex-wrap: wrap;
-                align-items: start;
-
-                h1 {
-                    width: 100%;
-                    text-align: center;
                 }
 
-                .container-example {
-                    flex-direction: column;
+                .container {
+                    width: 320px;
+                    flex-wrap: wrap;
+                    align-items: start;
 
-                    .example {
-                        width: 320px;
+                    h1 {
+                        width: 100%;
+                        text-align: center;
                     }
 
-                    .script {
-                        width: 320px;
-                    }
-                }
+                    .container-example {
+                        flex-direction: column;
 
-                .previous {
-                    width: 60%;
-                    font-size: 25px;
-                    text-align: center;
-                    margin-left: 20%;
+                        .example {
+                            width: 320px;
+                        }
+
+                        .script {
+                            width: 320px;
+                            max-height: 400px;
+                        }
+                    }
+
+                    .previous {
+                        width: 60%;
+                        font-size: 25px;
+                        text-align: center;
+                        margin-left: 20%;
+                    }
                 }
             }
         }

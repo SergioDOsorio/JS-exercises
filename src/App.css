@@ -1,4 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body main div .container .container-example .example .bin2Dec {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; }
+  body main div .container .container-example .example .bin2Dec .align {
+    display: flex;
+    justify-content: space-between; }
+    body main div .container .container-example .example .bin2Dec .align input {
+      width: 30%; }
+    body main div .container .container-example .example .bin2Dec .align button {
+      width: 25%; }
+  body main div .container .container-example .example .bin2Dec .error {
+    display: none; }
+
+body main div .container .container-example .example .border-radius-previewer {
+  display: flex;
+  width: 100%; }
+  body main div .container .container-example .example .border-radius-previewer div div .message {
+    color: #EFDA4D; }
+  body main div .container .container-example .example .border-radius-previewer .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    width: 40%;
+    gap: 10px; }
+    body main div .container .container-example .example .border-radius-previewer .center .border-example {
+      background: #EFDA4D;
+      height: 120px;
+      width: 120px; }
+
+@media (max-width: 426px) {
+  body main div .container .container-example .example .border-radius-previewer {
+    flex-direction: column;
+    align-items: center; }
+    body main div .container .container-example .example .border-radius-previewer .center button {
+      width: 150px; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +48,13 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column; }
-  body div .container-app {
+  body main div .container-app {
     background-color: #2B2D31;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Roboto'; }
-    body div .container-app main .container-main {
+    body main div .container-app .container-main {
       background-color: #34363b;
       max-width: 1024px;
       width: 1024px;
@@ -24,70 +62,70 @@ body {
       flex-direction: column;
       gap: 50px;
       color: white; }
-      body div .container-app main .container-main .container-title {
+      body main div .container-app .container-main .container-title {
         display: flex;
         align-items: center;
         padding: 5% 5% 0 5%; }
-        body div .container-app main .container-main .container-title .title {
+        body main div .container-app .container-main .container-title .title {
           color: #EFDA4D;
           font-size: 100px; }
-      body div .container-app main .container-main .intro {
+      body main div .container-app .container-main .intro {
         padding: 40px 60px 30px 60px; }
-      body div .container-app main .container-main .references li {
+      body main div .container-app .container-main .references li {
         margin-left: 100px; }
-        body div .container-app main .container-main .references li a {
+        body main div .container-app .container-main .references li a {
           color: white; }
-      body div .container-app main .container-main .container-nav {
+      body main div .container-app .container-main .container-nav {
         display: flex;
         justify-content: space-around;
         width: 100%;
         padding-left: 10%;
         padding-right: 10%;
         gap: 100px; }
-        body div .container-app main .container-main .container-nav button {
+        body main div .container-app .container-main .container-nav button {
           text-decoration: none;
           color: #EFDA4D;
           font-size: 40px;
           background-color: rgba(239, 217, 77, 0.152941);
           border-radius: 50px;
           padding: 10px; }
-      body div .container-app main .container-main .subtitle {
+      body main div .container-app .container-main .subtitle {
         color: #EFDA4D;
         font-size: 60px;
         margin-left: 55px;
         font-style: italic; }
-      body div .container-app main .container-main .list {
+      body main div .container-app .container-main .list {
         border: solid 2px #EFDA4D;
         border-radius: 25px;
         margin: 20px 50px 20px 50px; }
-        body div .container-app main .container-main .list .list-item {
+        body main div .container-app .container-main .list .list-item {
           list-style: none;
           border-bottom: solid 2px #EFDA4D; }
-          body div .container-app main .container-main .list .list-item .exercise {
+          body main div .container-app .container-main .list .list-item .exercise {
             padding-bottom: 1%; }
-            body div .container-app main .container-main .list .list-item .exercise .container-exercise {
+            body main div .container-app .container-main .list .list-item .exercise .container-exercise {
               display: flex;
               justify-content: space-between;
               padding: 1%;
               margin-top: 1%;
               margin-left: 1%; }
-              body div .container-app main .container-main .list .list-item .exercise .container-exercise .exercise-info {
+              body main div .container-app .container-main .list .list-item .exercise .container-exercise .exercise-info {
                 display: flex;
                 width: 80%;
                 gap: 3px; }
-                body div .container-app main .container-main .list .list-item .exercise .container-exercise .exercise-info .exercise-name {
+                body main div .container-app .container-main .list .list-item .exercise .container-exercise .exercise-info .exercise-name {
                   color: #f2f3d1;
                   font-size: 30px;
                   line-height: 1;
                   width: 30%; }
-                body div .container-app main .container-main .list .list-item .exercise .container-exercise .exercise-info hr {
+                body main div .container-app .container-main .list .list-item .exercise .container-exercise .exercise-info hr {
                   border: solid 1px #EFDA4D; }
-                body div .container-app main .container-main .list .list-item .exercise .container-exercise .exercise-info .short-description {
+                body main div .container-app .container-main .list .list-item .exercise .container-exercise .exercise-info .short-description {
                   color: white;
                   font-weight: 400;
                   width: 70%;
                   padding-left: 5px; }
-              body div .container-app main .container-main .list .list-item .exercise .container-exercise .btn-details {
+              body main div .container-app .container-main .list .list-item .exercise .container-exercise .btn-details {
                 border-radius: 50px;
                 padding: 5px;
                 background-color: rgba(239, 217, 77, 0.152941);
@@ -96,9 +134,9 @@ body {
                 margin-right: 1%;
                 height: 100%;
                 font-family: "Roboto"; }
-              body div .container-app main .container-main .list .list-item .exercise .container-exercise .btn-details:hover {
+              body main div .container-app .container-main .list .list-item .exercise .container-exercise .btn-details:hover {
                 cursor: pointer; }
-            body div .container-app main .container-main .list .list-item .exercise .container-description {
+            body main div .container-app .container-main .list .list-item .exercise .container-description {
               background-color: #2B2D31;
               display: flex;
               flex-direction: column;
@@ -106,10 +144,10 @@ body {
               padding-bottom: 1%;
               margin: 0 1% 0 1%;
               border-radius: 10px; }
-              body div .container-app main .container-main .list .list-item .exercise .container-description .description {
+              body main div .container-app .container-main .list .list-item .exercise .container-description .description {
                 padding: 2%;
                 color: white; }
-              body div .container-app main .container-main .list .list-item .exercise .container-description .show {
+              body main div .container-app .container-main .list .list-item .exercise .container-description .show {
                 border-radius: 50px;
                 padding: 5px;
                 background-color: rgba(239, 217, 77, 0.152941);
@@ -118,50 +156,41 @@ body {
                 width: 15%;
                 text-align: center;
                 text-decoration: none; }
-        body div .container-app main .container-main .list .list-item:last-child {
+        body main div .container-app .container-main .list .list-item:last-child {
           border-bottom: none; }
-  body div .container {
+  body main div .container {
     display: flex;
     flex-direction: column;
     padding-top: 40px;
     align-items: center;
     font-family: "Roboto";
     padding-bottom: 20px; }
-    body div .container h1 {
+    body main div .container h1 {
       color: #EFDA4D; }
-    body div .container .container-example {
+    body main div .container .container-example {
       display: flex;
       margin-top: 10px; }
-      body div .container .container-example .example {
+      body main div .container .container-example .example {
         color: white;
         background-color: #34363b;
         width: 512px;
         padding: 20px;
-        border: solid 2px #EFDA4D;
-        height: 550px; }
-        body div .container .container-example .example h2 {
+        border: solid 2px #EFDA4D; }
+        body main div .container .container-example .example p {
+          font-size: 16px;
+          padding-bottom: 10px; }
+        body main div .container .container-example .example h2 {
           color: #EFDA4D;
           text-align: center; }
-        body div .container .container-example .example ul {
+        body main div .container .container-example .example ul {
           color: #EFDA4D;
           font-size: 16px; }
-          body div .container .container-example .example ul li {
+          body main div .container .container-example .example ul li {
             margin-left: 20px;
             color: white; }
-        body div .container .container-example .example div .error {
-          display: none; }
-        body div .container .container-example .example hr {
+        body main div .container .container-example .example hr {
           margin: 20px 0 20px 0; }
-        body div .container .container-example .example .Border-radius-previewer {
-          display: flex;
-          width: 100%; }
-          body div .container .container-example .example .Border-radius-previewer .center {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 40%; }
-      body div .container .container-example .script {
+      body main div .container .container-example .script {
         color: white;
         background-color: #34363b;
         width: 512px;
@@ -170,27 +199,27 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 550px; }
-        body div .container .container-example .script .h90 {
+        min-height: 550px; }
+        body main div .container .container-example .script .h90 {
           height: 90%;
           background-color: #2B2D31;
           padding: 10px; }
-        body div .container .container-example .script .h10 {
-          height: 10%; }
-        body div .container .container-example .script div {
+        body main div .container .container-example .script hr {
+          margin-top: 10px; }
+        body main div .container .container-example .script div {
           overflow: auto;
           scrollbar-color: #888 #f1f1f1;
           scrollbar-width: thin; }
-          body div .container .container-example .script div hr {
+          body main div .container .container-example .script div hr {
             border: 1px solid #EFDA4D;
             margin-bottom: 5px; }
-        body div .container .container-example .script p {
+        body main div .container .container-example .script p {
           font-size: 16px; }
-        body div .container .container-example .script h2 {
+        body main div .container .container-example .script h2 {
           color: #EFDA4D;
           text-align: center;
           margin-bottom: 5px; }
-  body div .previous {
+  body main div .previous {
     text-decoration: none;
     color: #EFDA4D;
     font-size: 30px;
@@ -202,77 +231,78 @@ body {
     margin-top: 20px; }
 
 @media (max-width: 426px) {
-  body div .container-app main .container-main {
+  body main div .container-app .container-main {
     width: 320px;
     max-width: 320px;
     gap: 20px; }
-    body div .container-app main .container-main .container-title {
+    body main div .container-app .container-main .container-title {
       width: 100%;
       flex-direction: column;
       gap: 20px; }
-      body div .container-app main .container-main .container-title .title {
+      body main div .container-app .container-main .container-title .title {
         font-size: 40px;
         text-align: center; }
-      body div .container-app main .container-main .container-title img {
+      body main div .container-app .container-main .container-title img {
         height: 200px; }
-    body div .container-app main .container-main .intro {
+    body main div .container-app .container-main .intro {
       padding: 8%; }
-    body div .container-app main .container-main .references li {
+    body main div .container-app .container-main .references li {
       margin-left: 50px; }
-    body div .container-app main .container-main .container-nav {
+    body main div .container-app .container-main .container-nav {
       padding-left: 10%;
       padding-right: 10%;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px; }
-      body div .container-app main .container-main .container-nav button {
+      body main div .container-app .container-main .container-nav button {
         font-size: 20px; }
-    body div .container-app main .container-main .subtitle {
+    body main div .container-app .container-main .subtitle {
       font-size: 35px;
       margin-left: 0px;
       text-align: center; }
-    body div .container-app main .container-main .list {
+    body main div .container-app .container-main .list {
       margin: 18px; }
-      body div .container-app main .container-main .list .list-item .exercise .container-exercise {
+      body main div .container-app .container-main .list .list-item .exercise .container-exercise {
         flex-direction: column;
         align-items: center;
         padding-bottom: 10px; }
-        body div .container-app main .container-main .list .list-item .exercise .container-exercise .exercise-info {
+        body main div .container-app .container-main .list .list-item .exercise .container-exercise .exercise-info {
           width: 100%;
           padding-bottom: 5px; }
-          body div .container-app main .container-main .list .list-item .exercise .container-exercise .exercise-info .exercise-name {
+          body main div .container-app .container-main .list .list-item .exercise .container-exercise .exercise-info .exercise-name {
             font-size: 16px;
             line-height: 1;
             padding-left: 5px;
             padding-top: 3px; }
-          body div .container-app main .container-main .list .list-item .exercise .container-exercise .exercise-info .short-description {
+          body main div .container-app .container-main .list .list-item .exercise .container-exercise .exercise-info .short-description {
             font-size: 14px; }
-        body div .container-app main .container-main .list .list-item .exercise .container-exercise .btn-details {
+        body main div .container-app .container-main .list .list-item .exercise .container-exercise .btn-details {
           width: 40%;
           font-size: 14px; }
-      body div .container-app main .container-main .list .list-item .exercise .container-description {
+      body main div .container-app .container-main .list .list-item .exercise .container-description {
         padding-bottom: 10px;
         margin-bottom: 5px; }
-        body div .container-app main .container-main .list .list-item .exercise .container-description .description {
+        body main div .container-app .container-main .list .list-item .exercise .container-description .description {
           font-size: 15px;
           padding: 3%; }
-        body div .container-app main .container-main .list .list-item .exercise .container-description .show {
+        body main div .container-app .container-main .list .list-item .exercise .container-description .show {
           width: 40%;
           font-size: 15px; }
-  body div .container {
+  body main div .container {
     width: 320px;
     flex-wrap: wrap;
     align-items: start; }
-    body div .container h1 {
+    body main div .container h1 {
       width: 100%;
       text-align: center; }
-    body div .container .container-example {
+    body main div .container .container-example {
       flex-direction: column; }
-      body div .container .container-example .example {
+      body main div .container .container-example .example {
         width: 320px; }
-      body div .container .container-example .script {
-        width: 320px; }
-    body div .container .previous {
+      body main div .container .container-example .script {
+        width: 320px;
+        max-height: 400px; }
+    body main div .container .previous {
       width: 60%;
       font-size: 25px;
       text-align: center;
