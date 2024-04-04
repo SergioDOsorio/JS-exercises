@@ -9,32 +9,37 @@ body {
                             display: flex;
                             flex-direction: column;
                             gap: 10px;
+
                             .align {
                                 display: flex;
                                 justify-content: space-between;
-                                input{
+
+                                input {
                                     width: 30%;
                                 }
-                                button{
+
+                                button {
                                     width: 25%;
                                 }
                             }
+
                             .error {
-                                display:none;
+                                display: none;
                             }
                         }
 
                         .border-radius-previewer {
                             display: flex;
                             width: 100%;
-                            
-                            div{
-                                div{
-                                    .message{
+
+                            div {
+                                div {
+                                    .message {
                                         color: #EFDA4D;
                                     }
                                 }
                             }
+
                             .center {
                                 display: flex;
                                 flex-direction: column;
@@ -42,12 +47,45 @@ body {
                                 margin-top: 40px;
                                 width: 40%;
                                 gap: 10px;
-                                .border-example{
+
+                                .border-example {
                                     background: #EFDA4D;
                                     height: 120px;
                                     width: 120px;
-                                
+
                                 }
+                            }
+                        }
+
+                        .calculator {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 5px;
+
+                            .display {
+                                height: 50px;
+                                width: 50%;
+                                text-align: end;
+                            }
+
+                            div {
+                                width: 50%;
+
+                                .button {
+                                    background-color: rgba(239, 217, 77, 0.1529411765);
+                                    ;
+                                    width: 25%;
+                                }
+
+                                .button-operator {
+                                    background-color: #1A1A1A;
+                                    width: 25%;
+                                }
+                            }
+
+                            .button-clear {
+                                width: 50%;
                             }
                         }
                     }
@@ -57,20 +95,44 @@ body {
     }
 }
 
-@media (max-width: 426px){
+@media (max-width: 426px) {
     body {
         main {
             div {
-                .container{
-                    .container-example{
-                        .example{
-                            .border-radius-previewer{
+                .container {
+                    .container-example {
+                        .example {
+                            .border-radius-previewer {
                                 flex-direction: column;
                                 align-items: center;
-                                .center{
-                                    button{
+
+                                .center {
+                                    button {
                                         width: 150px;
                                     }
+                                }
+                            }
+
+                            .calculator {
+                                gap: 0;
+                                
+                                .display{
+                                    height: 30px;
+                                    font-size: 60%;
+                                }
+                                div {
+                                    .button {
+                                        font-size: 60%;
+
+                                    }
+
+                                    .button-operator {
+                                        font-size: 60%;
+                                    }
+                                }
+
+                                .button-clear {
+                                    font-size: 60%;
                                 }
                             }
                         }

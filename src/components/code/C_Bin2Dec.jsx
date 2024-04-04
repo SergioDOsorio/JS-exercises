@@ -3,7 +3,7 @@ import '../../App.css'
 
 function C_Bin2Dec() {
     return (
-        <div>
+        <>
             <p>
                 function dec2bin() &#123;
                 <br />
@@ -56,7 +56,7 @@ function C_Bin2Dec() {
                 <br />
                 &#125;
             </p>
-        </div>
+        </>
     )
 }
 

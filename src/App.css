@@ -30,12 +30,43 @@ body main div .container .container-example .example .border-radius-previewer {
       height: 120px;
       width: 120px; }
 
+body main div .container .container-example .example .calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; }
+  body main div .container .container-example .example .calculator .display {
+    height: 50px;
+    width: 50%;
+    text-align: end; }
+  body main div .container .container-example .example .calculator div {
+    width: 50%; }
+    body main div .container .container-example .example .calculator div .button {
+      background-color: rgba(239, 217, 77, 0.152941);
+      width: 25%; }
+    body main div .container .container-example .example .calculator div .button-operator {
+      background-color: #1A1A1A;
+      width: 25%; }
+  body main div .container .container-example .example .calculator .button-clear {
+    width: 50%; }
+
 @media (max-width: 426px) {
   body main div .container .container-example .example .border-radius-previewer {
     flex-direction: column;
     align-items: center; }
     body main div .container .container-example .example .border-radius-previewer .center button {
-      width: 150px; } }
+      width: 150px; }
+  body main div .container .container-example .example .calculator {
+    gap: 0; }
+    body main div .container .container-example .example .calculator .display {
+      height: 30px;
+      font-size: 60%; }
+    body main div .container .container-example .example .calculator div .button {
+      font-size: 60%; }
+    body main div .container .container-example .example .calculator div .button-operator {
+      font-size: 60%; }
+    body main div .container .container-example .example .calculator .button-clear {
+      font-size: 60%; } }
 
 * {
   margin: 0;
@@ -201,9 +232,9 @@ body {
         justify-content: space-between;
         min-height: 550px; }
         body main div .container .container-example .script .h90 {
-          height: 90%;
           background-color: #2B2D31;
-          padding: 10px; }
+          padding: 10px;
+          max-height: 90%; }
         body main div .container .container-example .script hr {
           margin-top: 10px; }
         body main div .container .container-example .script div {

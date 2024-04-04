@@ -251,9 +251,10 @@ body {
                         min-height: 550px;
 
                         .h90 {
-                            height: 90%;
+
                             background-color: #2B2D31;
                             padding: 10px;
+                            max-height: 90%;
                         }
 
                         hr{
