@@ -50,6 +50,41 @@ body main div .container .container-example .example .calculator {
   body main div .container .container-example .example .calculator .button-clear {
     width: 50%; }
 
+body main div .container .container-example .example .christmas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  body main div .container .container-example .example .christmas .container-lights {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px; }
+    body main div .container .container-example .example .christmas .container-lights .circle {
+      border-radius: 100px;
+      border: solid 2px white;
+      width: 50px;
+      height: 50px; }
+
+@keyframes changeColor {
+  0% {
+    background-color: #efd94d20; }
+  50% {
+    background-color: #EFDA4D; }
+  100% {
+    background-color: #efd94d20; } }
+  body main div .container .container-example .example .christmas .container-input {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    width: 100%; }
+    body main div .container .container-example .example .christmas .container-input label {
+      width: 25%; }
+    body main div .container .container-example .example .christmas .container-input input {
+      width: 45%;
+      padding-left: 10px; }
+    body main div .container .container-example .example .christmas .container-input button {
+      width: 30%; }
+
 @media (max-width: 426px) {
   body main div .container .container-example .example .border-radius-previewer {
     flex-direction: column;
